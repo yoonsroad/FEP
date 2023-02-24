@@ -60,12 +60,10 @@ def name_control(spname):
     return name
 
 
-    df_name.insert(6,'fin_name','')
+df_name.insert(6,'fin_name','')
+species_name = {}
 
 
-
-
-    species_name = {}
 for idx, row in (df_name.iterrows()):
     seq_name = row['seqname']
     taxonomy = row['taxonomy']
